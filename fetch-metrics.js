@@ -1,8 +1,7 @@
-// api/fetch-metrics.js
 import axios from 'axios';
 
 const BEARER_TOKEN = 
-"hCgwKCjE3NDE2Mjk2MjASyQE99_S0RdAYi8XLB6KDlltlu-XP36R-NhU-f0jOgCancUorEvCwb9Cnssl9agCv1XDQmE3_HJgL_tq4iqnf0bEMcCDgJLeM0AKGyB260KLxuEstg4LDn4LOR1W836nUQCa01tVSVrzosbJup7NBvxVOi5LKGTApUKmjtwNUWksH40nE8n4ZIuMRZgtFTFvadOhUUSS8SfIcDcQtzqxmyprHOogCMqkNYavh4s5taPUEF5OqdsO27zooB55m8MnDDyeT6oWJeOuj714"
+"2Mjk2MjASyQE99_S0RdAYi8XLB6KDlltlu-XP36R-NhU-f0jOgCancUorEvCwb9Cnssl9agCv1XDQmE3_HJgL_tq4iqnf0bEMcCDgJLeM0AKGyB260KLxuEstg4LDn4LOR1W836nUQCa01tVSVrzosbJup7NBvxVOi5LKGTApUKmjtwNUWksH40nE8n4ZIuMRZgtFTFvadOhUUSS8SfIcDcQtzqxmyprHOogCMqkNYavh4s5taPUEF5OqdsO27zooB55m8MnDDyeT6oWJeOuj714"
 
 export default async function handler(req, res) {
   const { startDate, endDate, code } = req.query;
