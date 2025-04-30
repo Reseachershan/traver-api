@@ -24,9 +24,9 @@ app.get('/fetch-metrics', async (req, res) => {
   };
 
   const fetchMetricsForShow = async (showId, bearerToken, startDate, endDate) => {
-    const url = `https://api.snapkit.com/v1/stories/studio/revenue/creator/${showId}/stories`;
+    const url = `https://api.snapkit.com/v1/stories/studio/revenue/creator/petstown/stories`;
     const params = { start_date: startDate, end_date: endDate };
-    const headers = { "authorization": `Bearer ${bearerToken}` };
+    const headers = { "authorization": `Bearer ${code}` };
 
     try {
       const response = await axios.get(url, { headers, params });

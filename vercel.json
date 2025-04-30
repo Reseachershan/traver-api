@@ -1,15 +1,16 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "fetch-metrics.js",
-            "use": "@vercel/node"
-        }
+      {
+        "src": "api/*.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "fetch-metrics.js"
-        }
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1.js"
+      }
     ]
-}
+  }
+  
